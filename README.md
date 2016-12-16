@@ -3,11 +3,11 @@
 A Vue.js project
 
 <p align="center">
-  <a href="https://circleci.com/gh/obonyojimmy/metrovue">
-    <img src="https://circleci.com/gh/obonyojimmy/metrovue.svg?style=svg" alt="Build Status" />
+  <a href="https://circleci.com/gh/metrovue/metro">
+    <img src="https://circleci.com/gh/metrovue/metro.svg?style=svg" alt="Build Status" />
   </a>
-  <a href="https://coveralls.io/github/obonyojimmy/metrovue?branch=master">
-    <img src="https://coveralls.io/repos/github/obonyojimmy/metrovue/badge.svg?branch=master&style=flat-square" alt="Coverage Status" />
+  <a href="https://coveralls.io/github/metrovue/metro?branch=master">
+    <img src="https://coveralls.io/repos/github/metrovue/metro/badge.svg?branch=master&style=flat-square" alt="Coverage Status" />
   </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License" />
@@ -15,12 +15,12 @@ A Vue.js project
   <a href="https://npmjs.org/package/metrovue">
     <img src="https://img.shields.io/npm/v/metrovue.svg?style=flat-square" alt="Packagist" />
   </a>
-  <a href="https://github.com/obonyojimmy/metrovue/releases">
-    <img src="https://img.shields.io/github/release/obonyojimmy/metrovue.svg?style=flat-square" alt="Latest Version" />
+  <a href="https://github.com/metrovue/metro/releases">
+    <img src="https://img.shields.io/github/release/metrovue/metro.svg?style=flat-square" alt="Latest Version" />
   </a>
 
-  <a href="https://github.com/obonyojimmy/metrovue/issues">
-    <img src="https://img.shields.io/github/issues/obonyojimmy/metrovue.svg?style=flat-square" alt="Issues" />
+  <a href="https://github.com/metrovue/metro/issues">
+    <img src="https://img.shields.io/github/issues/metrovue/metro.svg?style=flat-square" alt="Issues" />
   </a>
 </p>
 

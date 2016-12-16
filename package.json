@@ -2,27 +2,27 @@
   "name": "metrovue",
   "version": "0.0.1",
   "description": "A Vue.js project",
-  "jsnext": "dist/bundle.js",
-  "main": "dist/bundle.common.js",
+  "main": "dist/metrovue.common.js",
+  "jsnext:main": "dist/metrovue.es6.js",
   "bugs": {
-    "url": "https://github.com/metrovue/metro/metrovue/issues"
+    "url": "https://github.com/metrovue/metro/issues"
   },
   "engines": {
     "node": ">= 6.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/metrovue/metro/metrovue.git"
+    "url": "https://github.com/metrovue/metro.git"
   },
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "purge": "rm -rf dist/",
-    "compile": "rollup -c",
-    "build": "npm run purge && npm run compile",
-    "lint": "eslint src/* test/*",
-    "beforePublish": "npm run lint && npm run build"
+    "deploy": "bash build/shell.deploy.sh",
+    "clean": "node build/script.clean.js",
+    "dev": "node build/script.dev.js",
+    "build": "node build/script.build.js",
+    "lint": "eslint --ext .js,.vue src dev"
   },
   "files": [
     "dist/",
@@ -30,21 +30,59 @@
   ],
   "author": "obonyojimmy <cliffjimmy27@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "lodash": "^4.16.4",
-    "vue": "latest"
-  },
   "devDependencies": {
-    "eslint": "^3.7.1",
-    "eslint-config-airbnb-base": "^8.0.0",
+    "autoprefixer": "^6.5.0",
+    "babel-core": "^6.17.0",
+    "babel-eslint": "^7.0.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "babel-preset-stage-2": "^6.17.0",
+    "colors": "^1.1.2",
+    "connect-history-api-fallback": "^1.3.0",
+    "css-loader": "^0.26.0",
+    "eslint": "^3.7.0",
+    "eslint-config-standard": "^6.2.0",
+    "eslint-friendly-formatter": "^2.0.6",
+    "eslint-loader": "^1.5.0",
     "eslint-plugin-html": "^1.5.3",
-    "eslint-plugin-import": "^1.16.0",
-    "node-sass": "^3.10.1",
-    "parse5": "^3.0.0",
-    "rollup": "^0.36.3",
-    "rollup-plugin-buble": "^0.14.0",
-    "rollup-plugin-commonjs": "^5.0.5",
-    "rollup-plugin-node-resolve": "^2.0.0",
-    "rollup-plugin-vue": "^2.2.6"
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "fastclick": "^1.0.6",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
+    "json-loader": "^0.5.4",
+    "opn": "^4.0.2",
+    "parse5": "^2.2.3",
+    "postcss-loader": "^1.0.0",
+    "progress-bar-webpack-plugin": "^1.9.0",
+    "raw-loader": "^0.5.1",
+    "roboto-fontface": "^0.6.0",
+    "rollup": "^0.37.0",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-string": "^2.0.2",
+    "rollup-plugin-vue": "2.2.13",
+    "shelljs": "^0.7.0",
+    "stylint": "^1.5.6",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.1.1",
+    "url-loader": "^0.5.7",
+    "velocity-animate": "^1.2.3",
+    "vue": "^2.1.6",
+    "vue-loader": "^10.0.0",
+    "vue-router": "^2.0.0",
+    "vue-style-loader": "^1.0.0",
+    "vue-template-compiler": "^2.1.6",
+    "webpack": "^2.1.0-beta.27",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.2",
+    "webpack-merge": "^1.0.2"
+  },
+  "peerDependencies": {
+    "vue": "^2.1.0"
   }
 }
