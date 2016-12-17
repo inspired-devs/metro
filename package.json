@@ -56,6 +56,7 @@
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
     "json-loader": "^0.5.4",
+    "node-sass": "^4.0.0",
     "opn": "^4.0.2",
     "parse5": "^2.2.3",
     "postcss-loader": "^1.0.0",
@@ -66,14 +67,16 @@
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-string": "^2.0.2",
     "rollup-plugin-vue": "2.2.13",
+    "sass-loader": "^4.1.0",
     "shelljs": "^0.7.0",
+    "style-loader": "^0.13.1",
     "stylint": "^1.5.6",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.1.1",
     "url-loader": "^0.5.7",
     "velocity-animate": "^1.2.3",
     "vue": "^2.1.6",
-    "vue-loader": "^10.0.0",
+    "vue-loader": "^10.0.2",
     "vue-router": "^2.0.0",
     "vue-style-loader": "^1.0.0",
     "vue-template-compiler": "^2.1.6",
@@ -84,5 +87,8 @@
   },
   "peerDependencies": {
     "vue": "^2.1.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
   }
 }

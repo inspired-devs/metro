@@ -1,6 +1,6 @@
 <template>
 <div>
- <h1 id="greetings">Hello! metrovue</h1>
+ <h1>Hello! metrovue</h1>
 <div>
 </template>
 
