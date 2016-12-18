@@ -11,14 +11,36 @@ let routes = [
   {path: '/', name: 'index', component: load('index')},
   {
     path: '/test-layout',
-    name: 'layouts',
-    component: load('test-layout/layout')
+    name: 'TestLayouts',
+    component: load('test-layout/Index'),
+    children: [
+      {
+        path: 'layout1',
+        name: 'TestLayout1',
+        component: load('test-layout/Layout1')
+      },
+      {
+        path: 'layout2',
+        name: 'TestLayout2',
+        component: load('test-layout/Layout2')
+      }
+    ]
   },
   {
     path: '/css-components',
     name: 'cssComponents',
     component: load('css-components/Index'),
     children: [
+      {
+        path: 'layout',
+        name: 'cssLayout',
+        component: load('css-components/layout/Index'),
+        children: [
+          {path: '', component: load('css-components/layout/Tiles')},
+          {path: 'section', name: 'cssLayoutSec', component: load('css-components/layout/Section')},
+          {path: 'footer', name: 'cssLayoutFoot', component: load('css-components/layout/Footer')}
+        ]
+      },
       {
         path: 'grid',
         name: 'cssGrid',

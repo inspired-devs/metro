@@ -1,11 +1,8 @@
 <template>
-<div class="container">
-  <slot name="header"></slot>
+<nav class="nav">
   <slot></slot>
-  <slot name="footer"></slot>
-</div>
+</nav>
 </template>
-
 
 <script>
 export default {
@@ -15,3 +12,5 @@ export default {
 
 <style>
 </style>
+
+

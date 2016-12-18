@@ -5,6 +5,8 @@
   line-height: 16px
   padding-left: 6px
   padding-right: 6px
+=button-rounded
+  border-radius: $radius-rounded
 =button-medium
   font-size: 18px
   height: 40px
@@ -88,6 +90,8 @@
       background-color: $background
       color: $text-strong
   // Sizes
+  &.is-rounded
+    +button-rounded
   &.is-small
     +button-small
   &.is-medium

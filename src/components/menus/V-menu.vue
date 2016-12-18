@@ -1,9 +1,7 @@
 <template>
-<div class="container">
-  <slot name="header"></slot>
+<aside class="menu">
   <slot></slot>
-  <slot name="footer"></slot>
-</div>
+</aside>
 </template>
 
 
@@ -15,3 +13,4 @@ export default {
 
 <style>
 </style>
+

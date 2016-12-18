@@ -2,6 +2,7 @@ var
   path = require('path'),
   webpack = require('webpack'),
   cssUtils = require('./css-utils'),
+  // utils = require('./utils'),
   HtmlWebpackPlugin = require('html-webpack-plugin'),
   ProgressBarPlugin = require('progress-bar-webpack-plugin'),
   projectRoot = path.resolve(__dirname, '../'),
@@ -61,7 +62,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        loader: 'raw'
+        loader: 'url-loader'
       },
       {
         test: /\.json$/,
@@ -98,6 +99,19 @@ module.exports = {
       template: 'dev/index.html',
       inject: true
     }),
+    // new webpack.LoaderOptionsPlugin({
+    //  vue: {
+    //    loaders: utils.cssLoaders({
+    //    sourceMap: isProduction,
+    //    extract: isProduction
+    //    }),
+    //    postcss: [
+    //      require('autoprefixer')({
+    //        browsers: ['last 3 versions']
+    //      })
+    //    ]
+    //  }
+    // }),
     new webpack.LoaderOptionsPlugin({
       options: {
         context: path.resolve(__dirname, '../src'),
