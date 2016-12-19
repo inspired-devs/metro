@@ -50,6 +50,7 @@
     "eslint-plugin-promise": "^3.3.0",
     "eslint-plugin-standard": "^2.0.1",
     "eventsource-polyfill": "^0.9.6",
+    "expose-loader": "^0.7.1",
     "express": "^4.14.0",
     "extract-text-webpack-plugin": "^2.0.0-beta.4",
     "fastclick": "^1.0.6",
@@ -73,6 +74,7 @@
     "stylint": "^1.5.6",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.1.1",
+    "underscore": "^1.8.3",
     "url-loader": "^0.5.7",
     "velocity-animate": "^1.2.3",
     "vue": "^2.1.6",
@@ -90,6 +92,7 @@
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "lodash": "^4.17.2",
     "segoe-fonts": "^1.0.0"
   }
 }

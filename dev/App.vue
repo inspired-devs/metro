@@ -20,6 +20,34 @@
 					    <li>
 							<router-link :to="{ name: 'TestLayout2' }">Layout 2</router-link>
 					    </li>
+					    <li>
+							<router-link :to="{ name: 'TestLayout3' }">Layout 3</router-link>
+					    </li>
+					</ul>
+			    </li>
+			    <li>
+					<router-link :to="{ name: 'TestControls' }">Test Controls</router-link>
+					<ul>
+						<li>
+							<router-link :to="{ name: 'TestControlsCard' }">Card</router-link>
+					    </li>
+					    <li>
+							<router-link :to="{ name: 'TestControlsMedia' }">Media</router-link>
+					    </li>
+					    <li>
+							<router-link :to="{ name: 'TestControlsMessage' }">Message</router-link>
+					    </li>
+					    <li>
+							<router-link :to="{ name: 'TestControlsNotify' }">Notify</router-link>
+					    </li>
+					</ul>
+			    </li>
+			    <li>
+					<router-link :to="{ name: 'TestGrid' }">Test Grid</router-link>
+					<ul>
+						<li>
+							<router-link :to="{ name: 'TestGridBox' }">Box</router-link>
+					    </li>
 					</ul>
 			    </li>
 				<li>

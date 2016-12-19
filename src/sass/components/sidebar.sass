@@ -1,0 +1,88 @@
+.sidebar
+    color: $text
+    position: relative
+    width: 100%
+
+    li
+        display: block
+        background-color: inherit
+        color: inherit
+        position: relative
+        height: 52px
+
+        a
+            display: block
+            background-color: inherit
+            color: inherit
+            padding: .625rem 1rem .625rem 3.75rem
+            position: relative
+            width: 100%
+            height: 100%
+            line-height: .875rem
+
+            .icon
+                width: 28px
+                height: 28px
+                font-size: 28px
+                line-height: 28px
+                vertical-align: middle
+                text-align: center
+                position: absolute
+                left: .625rem
+                top: .625rem
+
+
+            .title, .counter
+                display: block
+                margin: 0
+                white-space: nowrap
+
+
+            .title
+                font-size: .6875rem
+                font-weight: bold
+                text-transform: uppercase
+
+
+            .counter
+                font-size: .7rem
+                font-weight: normal
+
+    li
+
+        &:hover
+            background-color: $background
+
+
+        &.is-active
+            background-color: $link
+            color: $link-invert
+
+.sidebar
+    transition: all 0.2s ease 0s
+
+    &.compact
+        width: 52px
+        transition: all 0.2s ease 0s
+
+        a
+            padding-right: 0
+            padding-left: 0
+            width: 52px
+
+
+        .title
+            display: none
+
+
+        .counter
+            position: absolute
+            top: 0
+            right: 4px
+
+
+
+
+
+
+

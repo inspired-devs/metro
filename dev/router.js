@@ -23,6 +23,50 @@ let routes = [
         path: 'layout2',
         name: 'TestLayout2',
         component: load('test-layout/Layout2')
+      },
+      {
+        path: 'layout3',
+        name: 'TestLayout3',
+        component: load('test-layout/Layout3')
+      }
+    ]
+  },
+  {
+    path: '/test-controls',
+    name: 'TestControls',
+    component: load('test-controls/Index'),
+    children: [
+      {
+        path: 'card',
+        name: 'TestControlsCard',
+        component: load('test-controls/Card')
+      },
+      {
+        path: 'media',
+        name: 'TestControlsMedia',
+        component: load('test-controls/Media')
+      },
+      {
+        path: 'message',
+        name: 'TestControlsMessage',
+        component: load('test-controls/Message')
+      },
+      {
+        path: 'notify',
+        name: 'TestControlsNotify',
+        component: load('test-controls/Notify')
+      }
+    ]
+  },
+  {
+    path: '/test-grid',
+    name: 'TestGrid',
+    component: load('test-grid/Index'),
+    children: [
+      {
+        path: 'box',
+        name: 'TestGridBox',
+        component: load('test-grid/Box')
       }
     ]
   },

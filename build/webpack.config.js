@@ -35,6 +35,12 @@ module.exports = {
     }
   },
   module: {
+	loaders: [
+	  {
+        test: require.resolve("lodash"),
+        loader: 'expose?_'
+      }
+	],
     rules: [
       { // eslint
         enforce: 'pre',
